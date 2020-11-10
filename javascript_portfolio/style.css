@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*Styling for navigation bar*/
+.navbar {
+    background: black;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar.sticky{
+    padding: 30px 0;
+    background: black;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a span{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: whitesmoke; 
+    margin-right: 25px;
+}
+
+/*Home section styling*/
+.home{
+    display: flex;
+    background: url("tech-background-image-1-1.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .my-name-1{
+    font-size: 27px;
+}
+
+.home .home-content .my-name-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .elevator-pitch {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/*responsive media-query*/
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .navbar .menu li{
+        display: inline-block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
